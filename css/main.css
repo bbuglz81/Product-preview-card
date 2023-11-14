@@ -87,22 +87,25 @@ textarea {
    Author's custom styles
    ======================================================================================================= */
 
+/*------------------------------------------Mobile Styles------------------------------------------*/
+
 /*-------------------------------General Styles-------------------------------*/
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'montserrat';
   font-size: 14px;
   background-color: hsl(30, 38%, 92%);
-  
 }
 
 main {
-  width: 95%;
+  margin: 30px auto;
+  width: 92%;
   /*border: #000 2px dotted;*/
   border-radius: 10px;
   background-color: white;
@@ -135,12 +138,14 @@ h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-family: 'Fraunces', serif;
   font-size: 30px;
   color: hsl(158, 36%, 37%);
+  margin-right: 20px;
 }
 
 .discount {
@@ -149,8 +154,51 @@ h3 {
 
 /*-------------------------------Product Info Styles-------------------------------*/
 
+.info-wrapper {
+  margin: 20px 20px;
+}
+
+.info-wrapper p {
+  margin-bottom: 20px;
+}
+
+.price {
+  /*border: #000 2px dotted;*/
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.price p {
+  margin: 0;
+}
+
+/*-------------------------------Button Styles-------------------------------*/
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 5px;
+  border-style: hidden;
+  width: 100%;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.button {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.button p {
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: white;
+}
 
 
+/*-------------------------------Footer Styles-------------------------------*/
 
 /* ==========================================================================
    Helper classes
@@ -240,9 +288,41 @@ h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /*------------------------------------------Desktop Styles------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+
+  main {
+    /*border: #000 2px dotted;*/
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 50vh;
+    width: 30vw;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 50vh;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .product-info {
+    width: 50%;
+    height: 100%;
+  }
+
+
 }
+
+
+
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
