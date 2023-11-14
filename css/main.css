@@ -83,12 +83,74 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
+/* =======================================================================================================
    Author's custom styles
-   ========================================================================== */
+   ======================================================================================================= */
+
+/*-------------------------------General Styles-------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'montserrat';
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  
+}
+
+main {
+  width: 95%;
+  /*border: #000 2px dotted;*/
+  border-radius: 10px;
+  background-color: white;
+  color: hsl(228, 12%, 48%);
+}
+
+/*-------------------------------Hero Styles-------------------------------*/
+
+.hero-image {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/*-------------------------------Text Styles-------------------------------*/
+
+h1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+.discount {
+  text-decoration: line-through;
+}
+
+/*-------------------------------Product Info Styles-------------------------------*/
 
 
-   
+
 
 /* ==========================================================================
    Helper classes
@@ -183,9 +245,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -196,6 +258,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -263,4 +326,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
