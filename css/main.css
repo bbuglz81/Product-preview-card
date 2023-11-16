@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 100%;
 }
 
 /*
@@ -298,30 +299,27 @@ button {
     align-content: center;
     justify-content: space-between;
     flex-flow: row wrap;
-    height: 50vh;
-    width: 30vw;
+    height: 50%;
+    width: 40vw;
   }
 
   .hero-image {
-    width: 200px;
-    height: 50vh;
+    width: 20vw;
+    height: 100%;
     background-image: url(../images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
   }
 
   .product-info {
-    width: 50%;
+    width: 20vw;
     height: 100%;
   }
 
-
 }
-
-
-
 
 
 @media print,
